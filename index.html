@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("https://wallpapercave.com/wp/wp3495545.jpg");
+    }
+
+    .left {
+        display: inline-block;
+        border: 2px solid red;        
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 90px;
+        filter: invert(20%);
+    }
+
+    .left div {
+        text-align: center;
+        color: rgb(12, 88, 12);
+        font-family: 'Allison', cursive;
+        font-size: 40px;
+    }
+
+    .mid {
+        display: block;
+        width: 38%;
+        margin: 20px auto;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 31px;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(185, 79, 30);
+    }
+
+    .btn {
+        margin: 0px 9px;
+        color: rgb(213, 226, 29);
+        background-color: rgb(199, 84, 84);
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 5px;
+        font-size: 15px;
+        cursor: pointer;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    .btn:hover {
+        background-color: rgb(201, 38, 38);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 134px 436px;
+        padding: 54px 77px;
+        width: 33%;
+        border-radius: 21px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 15px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 58%;
+        margin: 20px auto;
+        border-radius: 30px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="https://logopond.com/logos/97c16e3b17a6441e83da07d3899ae938.png" alt="">
+            <div>Foodie</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Specials</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Order From Us Now!!!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Orders">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Mobile No.">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
